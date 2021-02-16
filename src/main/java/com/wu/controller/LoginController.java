@@ -19,7 +19,7 @@ public class LoginController {
         //Validate user
         if (!StringUtils.isEmpty(email) && "123".equals(password)) {
             session.setAttribute("loginUser", email);
-            return "redirect:/main.html";
+            return "redirect:/mai.html";
         } else {
             model.addAttribute("msg", "Wrong username or password");
         }
