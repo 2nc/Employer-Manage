@@ -11,13 +11,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="demo" target="11" />
-      <module name="manage" target="1.8" />
+      <module name="manage" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo" options="-parameters" />
       <module name="manage" options="-parameters" />
     </option>
   </component>
