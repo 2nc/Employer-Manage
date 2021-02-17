@@ -1,6 +1,5 @@
 package com.wu.controller;
 
-import org.springframework.boot.web.servlet.server.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,11 +18,11 @@ public class LoginController {
         //Validate user
         if (!StringUtils.isEmpty(email) && "123".equals(password)) {
             session.setAttribute("loginUser", email);
-            return "redirect:/mai.html";
+            return "redirect:/main.html";
         } else {
             model.addAttribute("msg", "Wrong username or password");
         }
-        return "login";
+        return "index";
 
     }
 
